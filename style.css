@@ -30,6 +30,49 @@
   width: 300px;
 }
 
+.menu {
+  position: relative;
+  display: inline-block;
+}
+
+.hidden_menu {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.menu:hover .hidden_menu {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  height: 634px;
+  width: 232px;
+}
+
+.menu_class_text {
+  margin-right: 32px;
+  text-decoration: none;
+  color: #f16d7f;
+  font-family: Lato;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.menu_text {
+  text-decoration: none;
+  color: #6f6e6e;
+  font-family: Lato;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
 .main_welcome {
   display: grid;
   grid-template-columns: 50% 50%;
